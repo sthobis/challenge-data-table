@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "budo index.js -l -- -t sheetify/transform -t [ babelify --presets [ react es2015 ] ]"
+    "dev": "budo index.js -l -- -t sheetify/transform -t [ babelify --presets [ react es2015 ] ]",
+    "test": "standard"
   },
   "keywords": [],
   "author": "David Guttman <david@guttman.io> (http://davidguttman.com/)",
@@ -17,7 +18,8 @@
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
     "react-pivot": "^3.0.0",
-    "sheetify": "^6.1.0"
+    "sheetify": "^6.1.0",
+    "wildemitter": "^1.2.0"
   },
   "devDependencies": {
     "budo": "^10.0.4",
