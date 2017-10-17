@@ -71,8 +71,7 @@ var calculations = [
 
 function UserConfig () {
   if (window.localStorage.getItem('trafficTableUserConfig')) {
-    var configObj = JSON.parse(window.localStorage.getItem('trafficTableUserConfig'))
-    this.config = configObj
+    this.config = JSON.parse(window.localStorage.getItem('trafficTableUserConfig'))
   } else {
     this.config = {
       activeDimensions: ['Host'],
